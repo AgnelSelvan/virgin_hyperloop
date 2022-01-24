@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "952420660498",
+    "project_id": "virgin-hyperloop",
+    "storage_bucket": "virgin-hyperloop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952420660498:android:bb41d25a4b5c472a3eefcb",
+        "android_client_info": {
+          "package_name": "com.bugbuster.virgin_hyperloop.virgin_hyperloop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952420660498-m14131483t3k0lra9lh82rp5qjgf4iak.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bugbuster.virgin_hyperloop.virgin_hyperloop",
+            "certificate_hash": "6e77744afd8a40dca598f7f6e85fdb9c47cdc6af"
+          }
+        },
+        {
+          "client_id": "952420660498-e0dhsleqhu86ibjsqba7hvu5kitua3n9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2sMbhA9KFGugNGOP1T_T-WT-UJ0JnTho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952420660498-e0dhsleqhu86ibjsqba7hvu5kitua3n9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

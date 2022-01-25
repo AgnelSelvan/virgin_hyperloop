@@ -50,15 +50,20 @@ class _TrainScreenState extends State<TrainScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Container(
-                      width: 50,
-                      height: 50,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          border: Border.all(color: Colors.grey[400]!)),
-                      child: Icon(
-                        Icons.info,
-                        color: Colors.grey[500],
+                    InkWell(
+                      onTap: () {
+                        Constants().showCovidDialog(context);
+                      },
+                      child: Container(
+                        width: 50,
+                        height: 50,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5),
+                            border: Border.all(color: Colors.grey[400]!)),
+                        child: Icon(
+                          Icons.info,
+                          color: Colors.grey[500],
+                        ),
                       ),
                     ),
                     const SizedBox(width: 20),
@@ -275,7 +280,7 @@ class HomeHeader extends StatelessWidget {
                 width: 85,
                 height: 85,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
+                    borderRadius: BorderRadius.circular(85),
                     image:
                         DecorationImage(image: NetworkImage(user!.photoURL!))))
       ],

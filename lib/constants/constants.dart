@@ -224,4 +224,23 @@ class Constants {
     }
     return double.parse(((bookedSeat / totalSeat) * 100).toStringAsFixed(2));
   }
+
+  Future<void> showCovidDialog(BuildContext context) async {
+    return showDialog(
+        context: context,
+        builder: (context) {
+          return const SimpleDialog(
+            title: CustomText(
+              "Covid Rules",
+              fontWeight: FontWeight.bold,
+              size: 24,
+            ),
+            contentPadding: EdgeInsets.all(20),
+            children: [
+              CustomText(
+                  "The virus can spread from an infected person’s mouth or nose in small liquid particles when they cough, sneeze, speak, sing or breathe. These particles range from larger respiratory droplets to smaller aerosols.")
+            ],
+          );
+        });
+  }
 }

@@ -38,6 +38,20 @@ class _AddTrainState extends State<AddTrain> {
       }
     }
     setState(() {});
+    final pickedTime = await showTimePicker(
+        context: context,
+        initialTime:
+            TimeOfDay(hour: initialTime.hour, minute: initialTime.minute));
+    if (pickedTime != null) {
+      if (val == "s") {
+        startDate = DateTime(startDate.year, startDate.month, startDate.day,
+            pickedTime.hour, pickedTime.minute);
+      } else {
+        endDate = DateTime(endDate.year, endDate.month, endDate.day,
+            pickedTime.hour, pickedTime.minute);
+      }
+    }
+    setState(() {});
   }
 
   @override
